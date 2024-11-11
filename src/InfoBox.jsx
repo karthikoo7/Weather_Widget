@@ -27,7 +27,7 @@ export default function InfoBox({info}){ //{info} passed as a prop from weathera
         image={info.humidity>80 ? RAIN_URL : info.temp>25 ? HOT_URL : COLD_URL} //ternary if else to get required images, same for icons
         title="weather"
       />
-      <CardContent style={{backgroundColor:"skyblue"}}>
+      <CardContent style={{backgroundColor:"beige"}}>
         <Typography gutterBottom variant="h5" component="div">
         {info.city} {info.humidity>80 ? <ThunderstormIcon color='primary'/> : info.temp>25 ? <WbSunnyIcon color='error'/> : <AcUnitIcon color='primary'/>} 
         </Typography>
